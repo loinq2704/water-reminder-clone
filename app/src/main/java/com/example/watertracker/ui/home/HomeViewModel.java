@@ -36,6 +36,7 @@ public class HomeViewModel extends ViewModel {
         SharedPreferences preferences = context.getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
         int weight = preferences.getInt("Weight", 0);
         mRecommendedIntake = new MutableLiveData<>();
+        weight = 60;
         mRecommendedIntake.setValue(weight/2); // set the recommended intake value based on weight
     }
 
